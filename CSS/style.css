@@ -16,6 +16,7 @@ place-items: center;
     background-color: darkslateblue;
     color: white;
     grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6, 1fr);
     width: 350px;
     max-width: 100%;
     padding: 1.5rem;
@@ -50,11 +51,14 @@ place-items: center;
 .btn:hover {
     background-color: blue;
 }
-
-#cero{
+.doble-ancho {
     grid-column: span 2;
-
 }
+
+#cero {
+    grid-column: span 2;
+}
+
 #igual {
     grid-column: span 2;
     background-color: crimson;
