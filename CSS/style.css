@@ -7,7 +7,7 @@
 
 body{
 min-height: 100vh;
-background-color:darkblue ;
+background-color:white ;
 display: grid;
 place-items: center;
 
@@ -27,7 +27,7 @@ place-items: center;
     width: 100%;
 }
 .pantalla {
-    
+   
     background-color: black;
     padding: 40px;
     font-size: 2rem;
@@ -51,12 +51,9 @@ place-items: center;
 .btn:hover {
     background-color: blue;
 }
-.doble-ancho {
-    grid-column: span 2;
-}
 
 #cero {
-    grid-column: span 2;
+   grid-column: span 2;
 }
 
 #igual {
@@ -66,4 +63,20 @@ place-items: center;
 #clear {
     grid-column: span 2; 
     background-color: olivedrab; 
+}
+@media (max-width: 600px) {
+    .calculadora {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .pantalla {
+        padding: 10px;
+        font-size: 1rem;
+    }
 }

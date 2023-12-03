@@ -4,9 +4,18 @@ const botones = document.querySelectorAll(".btn");
 botones.forEach(boton => {
     boton.addEventListener ("click", () => {
         const botonApretado = boton.textContent;
-
+        
 if (boton.id ==="clear") {
     pantalla.textContent="0";
+    return;
+    }
+if (boton.id ==="borrar") {
+    if (pantalla.textContent.length === 1) {
+        pantalla.textContent= "";
+    } 
+    else {
+        pantalla.textContent = pantalla.textContent.slice(0, -1);
+    }
     return;
     }
 
